@@ -12,7 +12,7 @@ public class TestClass_1 {
 		WebDriver driver=new ChromeDriver();
 		
 		//launch google web  page
-		driver.get("https://www.google.com/");
+		driver.get("https://meet.google.com/");
 		
 		//get title of webpage
 		String title=driver.getTitle();
@@ -25,9 +25,11 @@ public class TestClass_1 {
 		
 		//to get page source
 		System.out.println(" sourcr of webpage is "+driver.getPageSource());
+		
+		
 		 
 		//to close webpage
-		driver.close();
+		driver.quit();
 
 	}
 
